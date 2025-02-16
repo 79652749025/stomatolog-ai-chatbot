@@ -1,3 +1,5 @@
+require('dotenv').config();  
+const openaiApiKey = process.env.OPENAI_API_KEY; // Для локальной разработки  
 export default defineEventHandler(async (event) => {
 	const config = useRuntimeConfig();
 	let messages = [];
